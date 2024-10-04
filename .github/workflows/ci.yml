@@ -23,7 +23,11 @@ jobs:
           bash _tools/format.sh
           codespell -I _tools/codespell-ignore.txt -x _tools/codespell-ignore-lines.txt {about,community,development,getting_started,tutorials}/**/*.rst
 
+      - name: Migrate to Redot
+        run: |
+          python migrate.py . _migrated True
+
       # Use dummy builder to improve performance as we don't need the generated HTML in this workflow.
       - name: Sphinx build
         run: |
-          sphinx-build --color -b dummy -d _build/doctrees -W ../_migrated _build/html
+          sphinx-build --color -b dummy -d _build/doctrees -W ./_migrated _build/html
