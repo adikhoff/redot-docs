@@ -6,7 +6,7 @@ labels: bug
 assignees: ''
 ---
 
-**Your Godot version:**
+**Your Redot version:**
 
 **Issue description:**
 
