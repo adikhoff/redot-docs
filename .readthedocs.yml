@@ -8,9 +8,10 @@ build:
   os: ubuntu-22.04
   tools:
     python: "3.11"
-  pre_build:
-    - echo "Pre build..."
-    - python migrate.py . _migrated False
+  jobs:
+    pre_build:
+      - echo "Pre build..."
+      - python migrate.py . _migrated False
 
 sphinx:
   configuration: _migrated/conf.py
