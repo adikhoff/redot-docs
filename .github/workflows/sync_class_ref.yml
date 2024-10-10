@@ -27,7 +27,7 @@ jobs:
       - name: Checkout the engine repository
         uses: actions/checkout@v4
         with:
-          repository: 'redot-engine/redot'
+          repository: 'redot-engine/redot-engine'
           # Use the appropriate branch for the documentation version.
           ref: ${{ env.engine_rev }}
           path: './.engine-src'
