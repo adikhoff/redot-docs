@@ -88,7 +88,7 @@ author = "Juan Linietsky, Ariel Manzur and the Godot community"
 
 # Version info for the project, acts as replacement for |version| and |release|
 # The short X.Y version
-version = os.getenv("READTHEDOCS_VERSION", "latest")
+version = os.getenv("READTHEDOCS_VERSION", "4.3")
 # The full version, including alpha/beta/rc tags
 release = version
 
@@ -179,7 +179,7 @@ html_context = {
     "display_github": not is_i18n,  # Integrate GitHub
     "github_user": "godotengine",  # Username
     "github_repo": "godot-docs",  # Repo name
-    "github_version": "master",  # Version
+    "github_version": "4.3",  # Version
     "conf_py_path": "/",  # Path in the checkout to the docs root
     "godot_inject_language_links": True,
     "godot_docs_supported_languages": list(supported_languages.keys()),
@@ -193,8 +193,8 @@ html_context = {
     "godot_title_prefix": "" if on_rtd else "(DEV) ",
     # Set this to `True` when in the `latest` branch to clearly indicate to the reader
     # that they are not reading the `stable` documentation.
-    "godot_is_latest": True,
-    "godot_version": "4.4",
+    "godot_is_latest": False,
+    "godot_version": "4.3",
     # Enables a banner that displays the up-to-date status of each article.
     "godot_show_article_status": True,
     # Display user-contributed notes at the bottom of pages that don't have `:allow_comments: False` at the top.
@@ -303,21 +303,6 @@ if is_i18n and os.path.exists("../classes/" + language):
         shutil.rmtree("classes")
 
     os.symlink("../classes/" + language, "classes")
-
-# Couldn't find a way to retrieve variables nor do advanced string
-# concat from reST, so had to hardcode this in the "epilog" added to
-# all pages. This is used in index.rst to display the Weblate badge.
-# On English pages, the badge points to the language-neutral engage page.
-rst_epilog = """
-.. |weblate_widget| image:: https://hosted.weblate.org/widgets/godot-engine/{image_locale}/godot-docs/287x66-white.png
-    :alt: Translation status
-    :target: https://hosted.weblate.org/engage/godot-engine{target_locale}/?utm_source=widget
-    :width: 287
-    :height: 66
-""".format(
-    image_locale="-" if language == "en" else language,
-    target_locale="" if language == "en" else "/" + language,
-)
 
 # Needed so the table of contents is created for EPUB
 epub_tocscope = 'includehidden'
