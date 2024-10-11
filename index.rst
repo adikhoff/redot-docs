@@ -42,11 +42,8 @@ what you are looking for in the docs, help us make the documentation better
 by letting us know!
 
 Submit an issue or pull request on the `GitHub repository <https://github.com/godotengine/godot-docs/issues>`_,
-help us `translate the documentation <https://hosted.weblate.org/engage/godot-engine/>`_
-into your language, or talk to us on the ``#documentation`` channel on the
+or talk to us on the ``#documentation`` channel on the
 `Godot Contributors Chat <https://chat.godotengine.org/>`_!
-
-.. centered:: |weblate_widget|
 
 Offline documentation
 ---------------------
