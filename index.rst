@@ -1,28 +1,6 @@
 Godot Docs – *3.6* branch
 =========================
 
-.. only:: not i18n
-
-  .. note:: Godot's documentation is available in various languages and versions.
-            Expand the "Read the Docs" panel at the bottom of the sidebar to see
-            the list.
-
-.. only:: i18n
-
-  .. note:: This documentation is translated from the `original English one
-            <https://docs.godotengine.org/en/stable>`_ by community members
-            on `Weblate <https://hosted.weblate.org/projects/godot-engine/godot-docs>`_.
-
-            Depending on the translation effort's completion level, you may
-            find paragraphs or whole pages which are still in English. You can
-            help the community by providing new translations or reviewing existing
-            ones on Weblate.
-
-            For the time being, localized translations are only available for
-            the "stable" branch. You can still view the English documentation for
-            other engine versions using the "Read the Docs" panel at the bottom
-            of the sidebar.
-
 Welcome to the official documentation of `Godot Engine <https://godotengine.org>`__,
 the free and open source community-driven 2D and 3D game engine! If you are new
 to this documentation, we recommend that you read the

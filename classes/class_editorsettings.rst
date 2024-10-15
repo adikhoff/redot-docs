@@ -1644,8 +1644,6 @@ If set to **Custom**, the scaling value in :ref:`interface/editor/custom_display
 
 The language to use for the editor interface.
 
-Translations are provided by the community. If you spot a mistake, `contribute to editor translations on Weblate! <https://docs.godotengine.org/en/latest/community/contributing/editor_and_docs_localization.html>`__
-
 .. rst-class:: classref-item-separator
 
 ----
